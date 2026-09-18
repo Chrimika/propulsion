@@ -3,13 +3,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --propulsion-purple: #8b35d1;
+  --propulsion-purple-dark: #6b1fb5;
+  --propulsion-pink: #e91e63;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-montserrat);
+  --color-propulsion-purple: #8b35d1;
+  --color-propulsion-purple-dark: #6b1fb5;
+  --color-propulsion-pink: #e91e63;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +27,180 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), 'Montserrat', system-ui, -apple-system, sans-serif;
 }
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animations épurées */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.6s ease-out;
+}
+
+/* Transitions ultra-fluides */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Images arrondies et fluides */
+img {
+  border-radius: inherit;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effects subtils */
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Boutons gradient épurés */
+.btn-gradient-purple {
+  background: linear-gradient(135deg, #8b35d1 0%, #b45fde 100%);
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-gradient-purple:hover {
+  background: linear-gradient(135deg, #6b1fb5 0%, #8b35d1 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(139, 53, 209, 0.25);
+}
+
+/* WhatsApp button styling */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.05);
+}
+
+/* Cards hover effect */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive video */
+.video-responsive {
+  aspect-ratio: 16/9;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* Backdrop blur support */
+@supports (backdrop-filter: blur(10px)) {
+  .backdrop-blur-md {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b35d1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b1fb5;
+}
+
+/* Section spacing */
+section {
+  scroll-margin-top: 2rem;
+}
+
+/* Link hover effect */
+a {
+  transition: color 0.2s ease;
+}
+
+/* Image loading effect */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+/* Focus styles accessibility */
+*:focus-visible {
+  outline: 2px solid #8b35d1;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Prevent layout shift */
+.aspect-square {
+  aspect-ratio: 1/1;
+}
+
+.aspect-video {
+  aspect-ratio: 16/9;
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #8b35d1 0%, #b45fde 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+

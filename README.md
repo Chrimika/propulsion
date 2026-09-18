@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Site Web Communauté Propulsion
 
-## Getting Started
+Site web officiel de la **Communauté Propulsion** - Plus de 3 500 entrepreneurs, professionnels et freelances au Cameroun et à l'international.
 
-First, run the development server:
+Fondée par **Dr Claudel NOUBISSIE** le 11 novembre 2025.
 
+---
+
+## 🌟 Caractéristiques
+
+- ✅ Design moderne aux couleurs Propulsion (violet, rose, or)
+- ✅ 100% responsive (mobile, tablette, desktop)
+- ✅ SEO optimisé pour Google
+- ✅ Boutons WhatsApp flottants pour contact direct
+- ✅ 3 packs d'adhésion détaillés (Standard, Pro, Élite)
+- ✅ Section programmes et témoignages
+- ✅ Vidéos intégrées
+- ✅ Animations fluides et professionnelles
+
+---
+
+## 🚀 Démarrage Rapide
+
+### Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Développement
+```bash
+npm run dev
+```
+Ouvrir [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📁 Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+propulsion/
+├── app/
+│   ├── components/
+│   │   ├── WhatsAppButton.tsx      # Boutons WhatsApp
+│   │   └── StructuredData.tsx      # SEO Schema.org
+│   ├── page.tsx                    # Page principale
+│   ├── layout.tsx                  # Layout + métadonnées SEO
+│   ├── globals.css                 # Styles + couleurs Propulsion
+│   ├── sitemap.ts                  # Génération sitemap
+│   └── manifest.ts                 # PWA manifest
+├── public/
+│   ├── images/                     # Logos et images
+│   ├── videos/                     # Vidéos témoignages
+│   └── robots.txt                  # Configuration robots
+└── Documentation complète fournie
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📚 Documentation
 
-## Deploy on Vercel
+- **PRESENTATION-CLIENT.md** - Vue d'ensemble du projet
+- **GUIDE-RAPIDE.md** - Instructions rapides
+- **LIVRAISON-PROPULSION.md** - Document technique complet
+- **SEO-GUIDE.md** - Guide référencement détaillé
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎯 Packs d'Adhésion
+
+- **Standard** : 10 000 FCFA / 25 euros
+- **Pro** : 50 000 FCFA / 100 euros
+- **Élite** : 250 000 FCFA / 500 euros
+
+Durée : 12 mois
+
+---
+
+## 📞 Contact
+
+- **WhatsApp 1** : +237 682 36 57 61
+- **WhatsApp 2** : +237 672 52 94 78
+- **Email** : info@claudel-noubissie.com
+- **Domaine prévu** : propulsion.cm
+
+---
+
+## 🔧 Technologies
+
+- **Next.js 16.3.4** avec App Router
+- **Tailwind CSS** pour le styling
+- **TypeScript** pour le typage
+- **Optimisations SEO** intégrées
+
+---
+
+## 🌐 Déploiement
+
+### Vercel (Recommandé)
+```bash
+npm i -g vercel
+vercel --prod
+```
+
+### Autres Options
+- Netlify
+- Serveur personnel avec Node.js
+
+---
+
+## ✨ Créé pour
+
+**Communauté Propulsion**  
+Dr Claudel NOUBISSIE  
+Développé par TCHINDA MBA CHRISTIAN MIKA
+
+---
+
+*Plus qu'une communauté, un réseau pour grandir ensemble* 🚀

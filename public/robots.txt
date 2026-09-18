@@ -1,0 +1,18 @@
+# robots.txt pour Communauté Propulsion
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Sitemap
+Sitemap: https://propulsion.cm/sitemap.xml
+
+# Principaux moteurs de recherche
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
