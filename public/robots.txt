@@ -2,10 +2,9 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Disallow: /_next/
 
 # Sitemap
-Sitemap: https://propulsion.cm/sitemap.xml
+Sitemap: https://www.propulsion.cm/sitemap.xml
 
 # Principaux moteurs de recherche
 User-agent: Googlebot
