@@ -10,8 +10,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Propulsion - Communauté de 3500+ Entrepreneurs et Professionnels au Cameroun | Dr Claudel NOUBISSIE",
-  description: "Rejoignez Propulsion, la communauté de plus de 3500 entrepreneurs, professionnels et freelances au Cameroun. Masterclass, networking, accompagnement Standard, Pro et Élite. Créée par Dr Claudel NOUBISSIE.",
+  metadataBase: new URL("https://www.propulsion.cm/"),
+  title: "PROPULSION · Communauté d’entrepreneurs et de professionnels au Cameroun",
+  description: "Découvrez PROPULSION, une communauté d’entrepreneurs et de professionnels au Cameroun. Formation, rencontres et partage d’expériences.",
   keywords: [
     "Propulsion",
     "communauté Propulsion",
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
     "réseau professionnel Cameroun",
     "formation entrepreneurs Cameroun"
   ],
-  authors: [{ name: "Dr Claudel NOUBISSIE" }],
+  authors: [{ name: "Dr Claudel NOUBISSIE", url: "https://livres.propulsion.cm/auteur" }],
   creator: "Dr Claudel NOUBISSIE",
   publisher: "Communauté Propulsion",
   icons: {
@@ -45,10 +46,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://propulsion.cm",
+    url: "https://www.propulsion.cm/",
     siteName: "Communauté Propulsion",
-    title: "Propulsion - Communauté de 3500+ Entrepreneurs au Cameroun",
-    description: "Rejoignez plus de 3500 entrepreneurs et professionnels. Masterclass, networking, accompagnement personnalisé.",
+    title: "PROPULSION · Communauté d’entrepreneurs et de professionnels au Cameroun",
+    description: "Découvrez PROPULSION, une communauté d’entrepreneurs et de professionnels au Cameroun. Formation, rencontres et partage d’expériences.",
     images: [
       {
         url: "/images/Propulsion Logo.png",
@@ -60,8 +61,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Propulsion - Communauté de 3500+ Entrepreneurs au Cameroun",
-    description: "Rejoignez plus de 3500 entrepreneurs et professionnels. Masterclass, networking, accompagnement personnalisé.",
+    title: "PROPULSION · Communauté d’entrepreneurs et de professionnels au Cameroun",
+    description: "Découvrez PROPULSION, une communauté d’entrepreneurs et de professionnels au Cameroun. Formation, rencontres et partage d’expériences.",
     images: ["/images/Propulsion Logo.png"],
   },
   robots: {
@@ -76,10 +77,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://propulsion.cm",
-  },
-  verification: {
-    google: "verification-code-here", // À remplacer par le vrai code Google Search Console
+    canonical: "https://www.propulsion.cm/",
   },
   manifest: "/manifest.json",
 };

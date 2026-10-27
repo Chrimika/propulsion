@@ -1,3 +1,5 @@
+Les chiffres, dates et tarifs présentés dans ce document proviennent de la version initiale du dépôt et sont conservés à titre d’archive. La correction technique ne les revalide pas. Consultez www.propulsion.cm pour les informations actuelles.
+
 # 🚀 Site Web Communauté Propulsion
 
 Site web officiel de la **Communauté Propulsion** - Plus de 3 500 entrepreneurs, professionnels et freelances au Cameroun et à l'international.

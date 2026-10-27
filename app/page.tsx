@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import WhatsAppButton from "./components/WhatsAppButton";
-import CounterAnimation from "./components/CounterAnimation";
 import { 
   People, 
   Award, 
@@ -72,8 +71,7 @@ export default function Home() {
                   <path d="M21.99 16.59C21.91 17.56 21.29 18.4 20.25 18.97C19.25 19.52 17.99 19.78 16.74 19.75C17.46 19.1 17.88 18.29 17.96 17.43C18.06 16.19 17.47 15 16.29 14.05C15.62 13.52 14.84 13.1 13.99 12.79C16.2 12.15 18.98 12.58 20.69 13.96C21.61 14.7 22.08 15.63 21.99 16.59Z" fill="currentColor"/>
                 </svg>
                 <div className="text-lg font-semibold flex items-center gap-1">
-                  <CounterAnimation end={3500} prefix="+" duration={2500} formatLargeNumbers={true} />
-                  <span>Membres</span>
+                  <span>Entrepreneurs et professionnels</span>
                 </div>
               </div>
               
@@ -83,8 +81,7 @@ export default function Home() {
                   <path d="M3.62001 8.49C5.59001 -0.169998 18.42 -0.159997 20.38 8.5C21.53 13.58 18.37 17.88 15.6 20.54C13.59 22.48 10.41 22.48 8.39001 20.54C5.63001 17.88 2.47001 13.57 3.62001 8.49Z" fill="currentColor"/>
                 </svg>
                 <div className="text-lg font-semibold flex items-center gap-1">
-                  <CounterAnimation end={50} prefix="+" duration={2000} formatLargeNumbers={true} />
-                  <span>Pays</span>
+                  <span>Échanges et rencontres</span>
                 </div>
               </div>
             </div>
@@ -103,7 +100,7 @@ export default function Home() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#services"
+              href="#offres"
               className="group bg-white text-[#8b35d1] px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 inline-flex items-center justify-center gap-2"
             >
               <span>Découvrir nos offres</span>
@@ -149,6 +146,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-2xl">
                 <img
+                  loading="lazy"
                   src="/images/presentation/presentation-3.webp"
                   alt="Dr Claudel NOUBISSIE et la communauté Propulsion"
                   className="w-full h-full object-cover"
@@ -302,6 +300,7 @@ export default function Home() {
                 >
                   <div className="relative h-96 overflow-hidden">
                     <img
+                      loading="lazy"
                       src={`/images/presentation/${program.image}`}
                       alt={program.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -395,7 +394,7 @@ export default function Home() {
             <div className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 border-2 border-[#8b35d1] relative transform md:scale-105 flex flex-col">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
                 <div className="bg-gradient-to-r from-[#e91e63] to-[#ff6b9d] text-white px-8 py-2 rounded-full text-sm font-bold shadow-lg">
-                  POPULAIRE
+                  PACK PRO
                 </div>
               </div>
               <div className="bg-gradient-to-br from-[#8b35d1] to-[#b45fde] text-white p-8 text-center relative pt-12">
@@ -528,7 +527,7 @@ export default function Home() {
                   <div className="relative">
                     <video
                       controls
-                      preload="metadata"
+                      preload="none"
                       className="w-full h-96 object-cover"
                       poster="/images/Propulsion Logo.png"
                     >
@@ -558,6 +557,7 @@ export default function Home() {
                 {/* Grande image 1 - 2x2 */}
                 <div className="col-span-2 row-span-2 relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:scale-[1.02] hover:shadow-2xl transition-all duration-500 cursor-pointer group">
                   <img
+                    loading="lazy"
                     src="/images/presentation/presentation-3.webp"
                     alt="Dr Claudel NOUBISSIE et membres"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
@@ -568,6 +568,7 @@ export default function Home() {
                 {/* Petite image 1 */}
                 <div className="col-span-1 row-span-1 relative rounded-xl md:rounded-2xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer group">
                   <img
+                    loading="lazy"
                     src="/images/presentation/presentation-2.webp"
                     alt="Membre professionnel"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -578,6 +579,7 @@ export default function Home() {
                 {/* Petite image 2 */}
                 <div className="col-span-1 row-span-1 relative rounded-xl md:rounded-2xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer group">
                   <img
+                    loading="lazy"
                     src="/images/presentation/presentation-4.webp"
                     alt="Apéro Business"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -588,6 +590,7 @@ export default function Home() {
                 {/* Moyenne verticale 1x2 */}
                 <div className="col-span-1 row-span-2 relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:scale-[1.02] hover:shadow-2xl transition-all duration-500 cursor-pointer group">
                   <img
+                    loading="lazy"
                     src="/images/presentation/presentation-8.webp"
                     alt="Leadership"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
@@ -598,6 +601,7 @@ export default function Home() {
                 {/* Moyenne verticale 1x2 */}
                 <div className="col-span-1 row-span-2 relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:scale-[1.02] hover:shadow-2xl transition-all duration-500 cursor-pointer group">
                   <img
+                    loading="lazy"
                     src="/images/presentation/presentation-5.webp"
                     alt="Networking"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
@@ -608,6 +612,7 @@ export default function Home() {
                 {/* Petite image 3 */}
                 <div className="col-span-1 row-span-1 relative rounded-xl md:rounded-2xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer group">
                   <img
+                    loading="lazy"
                     src="/images/presentation/presentation-7.webp"
                     alt="Formation"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -618,6 +623,7 @@ export default function Home() {
                 {/* Petite image 4 */}
                 <div className="col-span-1 row-span-1 relative rounded-xl md:rounded-2xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer group">
                   <img
+                    loading="lazy"
                     src="/images/presentation/presentation-9.webp"
                     alt="Rencontre pro"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -628,6 +634,7 @@ export default function Home() {
                 {/* Moyenne horizontale 2x1 */}
                 <div className="col-span-2 row-span-1 relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:scale-[1.02] hover:shadow-2xl transition-all duration-500 cursor-pointer group">
                   <img
+                    loading="lazy"
                     src="/images/presentation/presentation-10.webp"
                     alt="Communauté en action"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
@@ -638,6 +645,7 @@ export default function Home() {
                 {/* Petite image 5 */}
                 <div className="col-span-1 row-span-1 relative rounded-xl md:rounded-2xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer group">
                   <img
+                    loading="lazy"
                     src="/images/presentation/presentation-11.webp"
                     alt="Brainstorming"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -648,6 +656,7 @@ export default function Home() {
                 {/* Moyenne verticale 1x2 */}
                 <div className="col-span-1 row-span-2 relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:scale-[1.02] hover:shadow-2xl transition-all duration-500 cursor-pointer group">
                   <img
+                    loading="lazy"
                     src="/images/presentation/presentation-6.webp"
                     alt="Événement Propulsion"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
@@ -658,6 +667,7 @@ export default function Home() {
                 {/* Grande image 2 - 2x2 sur desktop, 2x1 sur mobile */}
                 <div className="col-span-2 row-span-1 md:row-span-2 relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:scale-[1.02] hover:shadow-2xl transition-all duration-500 cursor-pointer group">
                   <img
+                    loading="lazy"
                     src="/images/presentation/presentation-4.webp"
                     alt="Événement networking"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
@@ -668,6 +678,7 @@ export default function Home() {
                 {/* Petite image 6 */}
                 <div className="col-span-1 row-span-1 relative rounded-xl md:rounded-2xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer group">
                   <img
+                    loading="lazy"
                     src="/images/presentation/presentation-2.webp"
                     alt="Membres actifs"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -676,19 +687,19 @@ export default function Home() {
                 </div>
               </div>
               
-              {/* Stats sous la galerie */}
+              {/* Activités de la communauté */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/20">
                 <div className="text-center">
-                  <CounterAnimation end={3500} prefix="+" duration={2500} formatLargeNumbers={true} />
-                  <div className="text-white/80 text-base mt-2">Membres actifs</div>
+                  <div className="text-white text-2xl md:text-3xl font-bold">Entrepreneurs</div>
+                  <div className="text-white/80 text-base mt-2">Un réseau professionnel</div>
                 </div>
                 <div className="text-center">
-                  <CounterAnimation end={50} prefix="+" duration={2000} formatLargeNumbers={true} />
-                  <div className="text-white/80 text-base mt-2">Pays représentés</div>
+                  <div className="text-white text-2xl md:text-3xl font-bold">Formations</div>
+                  <div className="text-white/80 text-base mt-2">Compétences et partage</div>
                 </div>
                 <div className="text-center">
-                  <CounterAnimation end={100} suffix="+" duration={2200} formatLargeNumbers={true} />
-                  <div className="text-white/80 text-base mt-2">Événements annuels</div>
+                  <div className="text-white text-2xl md:text-3xl font-bold">Rencontres</div>
+                  <div className="text-white/80 text-base mt-2">Échanges et mise en relation</div>
                 </div>
               </div>
             </div>
@@ -720,7 +731,7 @@ export default function Home() {
               <div className="bg-gradient-to-br from-[#8b35d1] to-[#b45fde] rounded-3xl p-8 md:p-10 text-white shadow-2xl">
                 <h3 className="text-3xl font-bold mb-4">Rejoignez-nous dès aujourd&apos;hui</h3>
                 <p className="text-lg mb-8 text-white/90">
-                  Plus de 3 500 membres ont déjà choisi Propulsion pour propulser leur carrière et leurs projets.
+                  Des formations et des rencontres pour échanger, développer vos compétences et faire avancer vos projets.
                 </p>
                 
                 <div className="space-y-4 mb-8">
@@ -731,14 +742,14 @@ export default function Home() {
                       <path d="M19.99 7.34C20.15 9.28 18.77 10.98 16.86 11.21C16.85 11.21 16.85 11.21 16.84 11.21H16.81C16.75 11.21 16.69 11.21 16.64 11.23C15.67 11.28 14.78 10.97 14.11 10.4C15.14 9.48 15.73 8.1 15.61 6.60C15.54 5.79 15.26 5.05 14.84 4.42C15.22 4.23 15.66 4.11 16.11 4.07C18.07 3.90 19.82 5.36 19.99 7.34Z" fill="currentColor"/>
                       <path d="M21.99 16.59C21.91 17.56 21.29 18.4 20.25 18.97C19.25 19.52 17.99 19.78 16.74 19.75C17.46 19.1 17.88 18.29 17.96 17.43C18.06 16.19 17.47 15 16.29 14.05C15.62 13.52 14.84 13.1 13.99 12.79C16.2 12.15 18.98 12.58 20.69 13.96C21.61 14.7 22.08 15.63 21.99 16.59Z" fill="currentColor"/>
                     </svg>
-                    <span>Réseau de +3 500 professionnels</span>
+                    <span>Réseau d’entrepreneurs et de professionnels</span>
                   </div>
                   <div className="flex items-center gap-3 text-white/90">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M12 13.43C13.7231 13.43 15.12 12.0331 15.12 10.31C15.12 8.58687 13.7231 7.19 12 7.19C10.2769 7.19 8.88 8.58687 8.88 10.31C8.88 12.0331 10.2769 13.43 12 13.43Z" fill="currentColor"/>
                       <path d="M3.62001 8.49C5.59001 -0.169998 18.42 -0.159997 20.38 8.5C21.53 13.58 18.37 17.88 15.6 20.54C13.59 22.48 10.41 22.48 8.39001 20.54C5.63001 17.88 2.47001 13.57 3.62001 8.49Z" fill="currentColor"/>
                     </svg>
-                    <span>Présence dans +50 pays</span>
+                    <span>Échanges et partage d’expériences</span>
                   </div>
                   <div className="flex items-center gap-3 text-white/90">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -751,7 +762,7 @@ export default function Home() {
                       <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM18 12.81L17.99 13.99C17.98 15.35 17.84 16.38 16.5 16.5C15.14 16.62 14.11 16.49 12.75 16.5C11.39 16.51 10.36 16.62 9 16.5C7.64 16.38 7.51 15.35 7.5 13.99L7.49 12.81V11.2L7.5 10.02C7.51 8.66 7.65 7.63 9 7.51C10.36 7.39 11.39 7.52 12.75 7.51C14.11 7.5 15.14 7.39 16.5 7.51C17.86 7.63 17.98 8.66 17.99 10.02L18 11.2V12.81Z" fill="currentColor"/>
                       <path d="M11.09 14.08L14.19 12.27C14.42 12.13 14.42 11.88 14.19 11.74L11.09 9.92C10.85 9.78 10.59 9.94 10.59 10.22V13.79C10.59 14.07 10.85 14.22 11.09 14.08Z" fill="currentColor"/>
                     </svg>
-                    <span>Croissance garantie</span>
+                    <span>Un accompagnement pour progresser</span>
                   </div>
                 </div>
 
@@ -841,6 +852,7 @@ export default function Home() {
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 rounded-2xl overflow-hidden bg-white/10 backdrop-blur-md p-2">
                   <img
+                    loading="lazy"
                     src="/images/Propulsion Logo.png"
                     alt="Logo Propulsion"
                     className="w-full h-full object-cover rounded-xl"
@@ -853,11 +865,10 @@ export default function Home() {
               </div>
               
               <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
-                Rejoignez plus de <span className="text-[#ffd700] font-bold">3 500 membres</span> qui transforment 
-                leurs ambitions en réalité. Une communauté dynamique présente dans plus de 50 pays.
+                PROPULSION réunit des entrepreneurs et des professionnels autour de formations, de rencontres et du partage d’expériences.
               </p>
 
-              {/* Stats compactes */}
+              {/* Public et activités */}
               <div className="flex flex-wrap gap-6 mb-6">
                 <div className="flex items-center gap-2">
                   <div className="w-10 h-10 rounded-xl bg-[#8b35d1]/20 flex items-center justify-center">
@@ -869,8 +880,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-bold text-lg">+3 500</p>
-                    <p className="text-xs text-gray-400">Membres</p>
+                    <p className="text-white font-bold text-lg">Entrepreneurs</p>
+                    <p className="text-xs text-gray-400">et professionnels</p>
                   </div>
                 </div>
 
@@ -882,8 +893,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-bold text-lg">+50</p>
-                    <p className="text-xs text-gray-400">Pays</p>
+                    <p className="text-white font-bold text-lg">Échanges</p>
+                    <p className="text-xs text-gray-400">et rencontres</p>
                   </div>
                 </div>
               </div>
@@ -968,7 +979,23 @@ export default function Home() {
               © {new Date().getFullYear()} Communauté Propulsion. Tous droits réservés.
             </p>
             
-            <div className="flex items-center gap-6">
+            <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-6 gap-y-3">
+              <a
+                href="https://livres.propulsion.cm/auteur"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-gray-400 hover:text-white transition-colors"
+              >
+                Dr Claudel NOUBISSIE · parcours et livres
+              </a>
+              <a
+                href="https://livres.propulsion.cm/presse"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-gray-400 hover:text-white transition-colors"
+              >
+                Presse et références
+              </a>
               <a href="#offres" className="text-sm text-gray-400 hover:text-white transition-colors">
                 Adhérer
               </a>

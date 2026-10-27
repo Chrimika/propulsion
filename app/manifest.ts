@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Communauté Propulsion - Réseau Entrepreneurs Cameroun',
     short_name: 'Propulsion',
-    description: 'Communauté de 3500+ entrepreneurs et professionnels au Cameroun. Masterclass, networking et accompagnement.',
+    description: 'Communauté d’entrepreneurs et de professionnels au Cameroun. Formation, rencontres et partage d’expériences.',
     start_url: '/',
     display: 'standalone',
     background_color: '#8b35d1',

@@ -4,12 +4,14 @@ export default function StructuredData() {
     "@type": "Organization",
     "name": "Communauté Propulsion",
     "alternateName": "Propulsion Cameroun",
-    "url": "https://propulsion.cm",
-    "logo": "https://propulsion.cm/images/Propulsion Logo.png",
-    "description": "Communauté de plus de 3500 entrepreneurs, professionnels et freelances au Cameroun et à l'international. Formation, networking et accompagnement entrepreneurial.",
+    "url": "https://www.propulsion.cm/",
+    "logo": "https://www.propulsion.cm/images/Propulsion%20Logo.png",
+    "description": "Communauté d’entrepreneurs et de professionnels au Cameroun. Formation, rencontres et partage d’expériences.",
     "founder": {
       "@type": "Person",
-      "name": "Dr Claudel NOUBISSIE"
+      "@id": "https://livres.propulsion.cm/#auteur",
+      "name": "Dr Claudel NOUBISSIE",
+      "url": "https://livres.propulsion.cm/auteur"
     },
     "foundingDate": "2025-11-11",
     "contactPoint": [
@@ -44,10 +46,6 @@ export default function StructuredData() {
         "name": "International"
       }
     ],
-    "numberOfEmployees": {
-      "@type": "QuantitativeValue",
-      "value": 3500
-    },
     "sameAs": [
       "https://www.facebook.com/propulsioncameroun"
     ]
@@ -57,8 +55,8 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Communauté Propulsion",
-    "url": "https://propulsion.cm",
-    "description": "Communauté de 3500+ entrepreneurs et professionnels au Cameroun",
+    "url": "https://www.propulsion.cm/",
+    "description": "Communauté d’entrepreneurs et de professionnels au Cameroun",
     "publisher": {
       "@type": "Organization",
       "name": "Communauté Propulsion"
@@ -82,41 +80,50 @@ export default function StructuredData() {
       {
         "@type": "Offer",
         "name": "Pack Standard",
-        "description": "Masterclass, replays, challenges et groupe WhatsApp",
+        "description": "Masterclass, replays, challenges et groupe WhatsApp. Adhésion de 12 mois.",
         "price": "10000",
         "priceCurrency": "XAF",
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "25",
-          "priceCurrency": "EUR"
-        },
-        "validFor": "P12M"
+        "url": "https://www.propulsion.cm/#offres"
+      },
+      {
+        "@type": "Offer",
+        "name": "Pack Standard",
+        "description": "Masterclass, replays, challenges et groupe WhatsApp. Adhésion de 12 mois.",
+        "price": "25",
+        "priceCurrency": "EUR",
+        "url": "https://www.propulsion.cm/#offres"
       },
       {
         "@type": "Offer",
         "name": "Pack Pro",
-        "description": "Pack Standard + annuaire, mises en relation prioritaires, formations et suivi individuel",
+        "description": "Pack Standard + annuaire, mises en relation prioritaires, formations et suivi individuel. Adhésion de 12 mois.",
         "price": "50000",
         "priceCurrency": "XAF",
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "100",
-          "priceCurrency": "EUR"
-        },
-        "validFor": "P12M"
+        "url": "https://www.propulsion.cm/#offres"
+      },
+      {
+        "@type": "Offer",
+        "name": "Pack Pro",
+        "description": "Pack Standard + annuaire, mises en relation prioritaires, formations et suivi individuel. Adhésion de 12 mois.",
+        "price": "100",
+        "priceCurrency": "EUR",
+        "url": "https://www.propulsion.cm/#offres"
       },
       {
         "@type": "Offer",
         "name": "Pack Élite",
-        "description": "Pack Pro + accompagnement stratégique renforcé, visibilité premium et accès prioritaire aux partenariats",
+        "description": "Pack Pro + accompagnement stratégique renforcé, visibilité premium et accès prioritaire aux partenariats. Adhésion de 12 mois.",
         "price": "250000",
         "priceCurrency": "XAF",
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "500",
-          "priceCurrency": "EUR"
-        },
-        "validFor": "P12M"
+        "url": "https://www.propulsion.cm/#offres"
+      },
+      {
+        "@type": "Offer",
+        "name": "Pack Élite",
+        "description": "Pack Pro + accompagnement stratégique renforcé, visibilité premium et accès prioritaire aux partenariats. Adhésion de 12 mois.",
+        "price": "500",
+        "priceCurrency": "EUR",
+        "url": "https://www.propulsion.cm/#offres"
       }
     ]
   };
